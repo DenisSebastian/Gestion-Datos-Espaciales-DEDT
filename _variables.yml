@@ -8,16 +8,8 @@ profesor:
   cargo: "Coordinador de Investigación, Centro de Inteligencia Territorial - UAI"
   email: <denis.berroeta@uai.cl>
 
-profesor2:
-  name: "Cristina Caceres"
-  cargo: "Docente UAI, Arquitecto, Urbanista y Territorialista"
-  email: <mcristina.caceres@edu.uai.cl>
 
-ayudante:
-  name: "[Felipe Matas](https://cit.uai.cl/felipe-matas/)"
-  cargo: "Analista de investigación y desarrollo, Centro de Inteligencia Territorial - UAI"
-  email: <felipe.matas@edu.uai.cl>
-  
+
 engine:
   jupyter: "[Jupyter](https://jupyter.org)"
   knitr: "[Knitr](<https://yihui.name/knitr>)"

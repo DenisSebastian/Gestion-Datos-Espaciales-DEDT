@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Centro de Inteligencia Territorial- UAI">
-<meta name="dcterms.date" content="2023-10-15">
+<meta name="dcterms.date" content="2024-07-13">
 
 <title>Gestión de Datos Espaciales</title>
 <style>
@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro_r.html" rel="next">
+<link href="./references.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -48,7 +48,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -57,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -73,12 +80,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Prefacio</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -88,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Gestión de Datos Espaciales</a> 
@@ -104,37 +111,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Prefacio</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a R Project</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Variables en R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./funciones.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Funciones en R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./datos_espaciales.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Datos Espaciales</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./indicadores.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Indicadores Territoriales</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Syllabus</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -143,63 +120,25 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">References</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./recursos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Instalación de Recursos</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./control_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Estructuras en R</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./tidyverse.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Tidyverse en R</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./espacial_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Objetos Espaciales en R</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#prefacio" id="toc-prefacio" class="nav-link active" data-scroll-target="#prefacio"><span class="header-section-number">1</span> Prefacio</a>
+  <li><a href="#syllabus" id="toc-syllabus" class="nav-link active" data-scroll-target="#syllabus"><span class="header-section-number">1</span> Syllabus</a>
   <ul class="collapse">
   <li><a href="#introducción" id="toc-introducción" class="nav-link" data-scroll-target="#introducción"><span class="header-section-number">1.1</span> Introducción</a></li>
   <li><a href="#objetivos" id="toc-objetivos" class="nav-link" data-scroll-target="#objetivos"><span class="header-section-number">1.2</span> Objetivos</a></li>
   <li><a href="#contenidos" id="toc-contenidos" class="nav-link" data-scroll-target="#contenidos"><span class="header-section-number">1.3</span> Contenidos</a></li>
   <li><a href="#cronograma" id="toc-cronograma" class="nav-link" data-scroll-target="#cronograma"><span class="header-section-number">1.4</span> Cronograma</a></li>
-  <li><a href="#profesor-var-profesor.name" id="toc-profesor-var-profesor.name" class="nav-link" data-scroll-target="#profesor-var-profesor.name">Profesor: Denis Berroeta</a></li>
-  <li><a href="#profesora-var-profesor2.name" id="toc-profesora-var-profesor2.name" class="nav-link" data-scroll-target="#profesora-var-profesor2.name">Profesora: Cristina Caceres</a></li>
-  <li><a href="#ayudante-var-ayudante.name" id="toc-ayudante-var-ayudante.name" class="nav-link" data-scroll-target="#ayudante-var-ayudante.name">Ayudante: Felipe Matas</a></li>
-  <li><a href="#metodología" id="toc-metodología" class="nav-link" data-scroll-target="#metodología"><span class="header-section-number">1.5</span> Metodología</a></li>
-  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación"><span class="header-section-number">1.6</span> Evaluación</a></li>
-  <li><a href="#normas" id="toc-normas" class="nav-link" data-scroll-target="#normas"><span class="header-section-number">1.7</span> Normas</a></li>
+  <li><a href="#profesor" id="toc-profesor" class="nav-link" data-scroll-target="#profesor"><span class="header-section-number">1.5</span> Profesor: Denis Berroeta</a></li>
+  <li><a href="#metodología" id="toc-metodología" class="nav-link" data-scroll-target="#metodología"><span class="header-section-number">1.6</span> Metodología</a></li>
+  <li><a href="#evaluación" id="toc-evaluación" class="nav-link" data-scroll-target="#evaluación"><span class="header-section-number">1.7</span> Evaluación</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -210,7 +149,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Gestión de Datos Espaciales</h1>
-<p class="subtitle lead">Diplomado en Gestión y Evidencia Territorial - UAI</p>
+<p class="subtitle lead">Diplomado en Data y Evidencia Territorial - UAI</p>
 </div>
 
 
@@ -227,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 15, 2023</p>
+      <p class="date">July 13, 2024</p>
     </div>
   </div>
   
@@ -235,40 +174,41 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://cit.uai.cl"><img src="images/Logo_CIT_UAI_Negro.png" class="img-fluid figure-img" width="250"></a></p>
+<p><a href="https://cit.uai.cl"><img src="images/Logo_CIT_UAI_Negro.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
 </figure>
 </div>
 <p><br></p>
-<section id="prefacio" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Prefacio</h1>
+<section id="syllabus" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Syllabus</h1>
 <section id="introducción" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">1.1</span> Introducción</h2>
 <p>Hoy en día es cada vez más común contar con información georreferenciada, la cual se utiliza en el día a día para analizar fenómenos territoriales y para apoyar decisiones dentro de diversas instituciones de los sectores tanto privado, público y académico. Esta información geográfica puede tomar diversas formas en el espacio, y el uso de técnicas de modelamiento territorial permite analizarla de una manera cuantitativa, robusta y escalable.</p>
 <p>En modelamiento territorial permite revelar patrones geoespaciales en los datos que podrían pasar desapercibidos al analizarse con herramientas estadísticas convencionales que no incorporen explícitamente la dimensión espacial. Este campo está en constante desarrollo y se puede considerar como una intersección entre la geoestadística, geomática, inteligencia artificial y sistemas de información geográfica (SIG). Este enfoque interdisciplinario es necesario para comprender procesos territoriales complejos e interdependientes. Para construir estos modelos se deben equilibrar cuidadosamente los conocimientos del dominio del problema con las diferentes herramientas y técnicas de análisis de datos que se han desarrollado específicamente para representar el espacio geográfico.</p>
-<p>En este curso proponemos un enfoque científico del análisis territorial. Las herramientas que veremos en este curso les permitirán recolectar, transformar, explorar, modelar y visualizar datos geoespaciales de manera algorítmica. Aprenderemos a identificar los diferentes enfoques que se utilizan en modelamiento territorial, aprenderemos a plantear un problema territorial desde una perspectiva conceptual, y diseñaremos metodologías que nos permitan analizar estos problemas utilizando las técnicas de modelamiento apropiadas. Se revisarán también herramientas para elaborar cartografías que permitan una interpretación territorial de los datos analizados. Todas las sesiones de este curso irán acompañadas de un módulo de análisis practico implementado en el lenguaje de programación R que nos permitirá aprender a procesar datos geoespaciales de manera escalable.</p>
+<p>En este curso proponemos un enfoque de análisis territorial aplicado utilizando el lenguaje de programación <a href="https://www.r-project.org">R Project</a> como herramienta principal de procesamiento. A través de R, abordaremos desde los niveles básicos hasta los avanzados necesarios para recolectar, explorar, calcular y visualizar datos geoespaciales. El uso de R no solo nos permitirá manejar y analizar grandes volúmenes de datos de manera eficiente, sino también implementar modelos sofisticados que mejoren la precisión y profundidad de nuestros análisis. Además, la capacidad de automatización y escalabilidad de los scripts en R facilitará la replicación de estudios y el procesamiento de datos en múltiples escenarios, aumentando así la robustez y reproducibilidad de nuestros resultados.</p>
 </section>
 <section id="objetivos" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="objetivos"><span class="header-section-number">1.2</span> Objetivos</h2>
-<p>Al terminar el curso el alumno estará capacitado para:</p>
+<p><strong>Objetivo General</strong></p>
 <ul>
-<li>Recolectar y explorar base de datos provenientes de diferentes fuentes.</li>
-<li>Construir indicadores a partir de información territorial.</li>
-<li>Analizar y explorar datos vectoriales.</li>
-<li>Construir visualizaciones cartográficas online que representen los hallazgos obtenidos.</li>
+<li>Proveer a los estudiantes las habilidades y conocimientos necesarios para utilizar R en el análisis de datos espaciales, con el fin de construir y aplicar indicadores territoriales que modelen y expliquen la situación de las personas en el territorio, facilitando la toma de decisiones en políticas públicas y privadas.</li>
+</ul>
+<p><strong>Objetivos Específicos</strong></p>
+<ul>
+<li><p>Desarrollar competencias en el uso de R para la manipulación y análisis de datos geoespaciales: Los estudiantes aprenderán desde los fundamentos de la programación en R hasta técnicas avanzadas para recolectar, explorar, y visualizar datos espaciales, asegurando una comprensión sólida de las herramientas y métodos necesarios para el análisis territorial.</p></li>
+<li><p>Capacitar a los estudiantes en la consulta y análisis de bases de datos de encuestas: Se enseñará cómo acceder, manipular y analizar datos provenientes de encuestas, integrando esta información con datos espaciales para crear indicadores que reflejen la situación socioeconómica y demográfica de diferentes zonas, comunas y regiones.</p></li>
+<li><p>Aplicar técnicas de modelado para la construcción de indicadores territoriales: Los estudiantes aprenderán a desarrollar y aplicar modelos que expliquen situaciones territoriales específicas, utilizando estos indicadores para apoyar la formulación y evaluación de políticas públicas y estrategias privadas, mejorando la toma de decisiones basada en datos.</p></li>
 </ul>
 </section>
 <section id="contenidos" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="contenidos"><span class="header-section-number">1.3</span> Contenidos</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/flujo_general.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
+<!-- ![](images/flujo_general.png){fig-align="center"} -->
 <ol type="1">
 <li>Introducción a R y Lectura de Datos</li>
 <li>Manipulación de Datos Espaciales</li>
@@ -282,56 +222,40 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="1.4" class="anchored" data-anchor-id="cronograma"><span class="header-section-number">1.4</span> Cronograma</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/horarios.png" class="img-fluid figure-img"></p>
+<p><img src="images/horario_clases.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
+<ul>
+<li>S1: Introducción a la Estadística Espacial y a Datos Espaciales</li>
+<li>S2: Introducción a R y Lectura de Datos</li>
+<li>S3: R y Manejo de Datos Espaciales</li>
+<li>S4: Construcción de Indicadores Territoriales Socioeconómicos</li>
+<li>S5: Desarrollo de Proyecto Grupal y Representación Visual</li>
+<li>S6: Ayudantía</li>
+<li>S7: Presentación Final de Proyecto Grupal</li>
+</ul>
 </section>
-<section id="profesor-var-profesor.name" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="profesor-var-profesor.name">Profesor: <a href="https://cit.uai.cl/denis-berroeta/">Denis Berroeta</a></h2>
-<p>Coordinador de Investigación, Centro de Inteligencia Territorial - UAI, email: <a href="mailto:denis.berroeta@uai.cl" class="email">denis.berroeta@uai.cl</a></p>
+<section id="profesor" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="profesor"><span class="header-section-number">1.5</span> Profesor: <a href="https://cit.uai.cl/denis-berroeta/">Denis Berroeta</a></h2>
+<p>Coordinador de Investigación, Centro de Inteligencia Territorial - UAI.<br>
+email: <a href="mailto:denis.berroeta@uai.cl" class="email">denis.berroeta@uai.cl</a></p>
 <p>Magíster en Inteligencia Artificial, Doctorado y Master en Data Science (cursando), Ingeniero en Prevención de Riesgos y Topógrafo. Tiene experiencia en modelamiento y análisis de datos espaciales, trabajando en diferentes proyectos de investigación públicos y privados en el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez, donde se desempeña como coordinador de investigación, diseñando y gestionando la implementación de metodologías de análisis de datos territoriales. Posee experiencia como profesor en Geoestadísticas; Análisis Criminal, Análisis de imágenes satelitales para el monitoreo ambiental y Data Science. Tema de Tesis Detección de Cambios en Imágenes Radar con técnicas de deep learning.</p>
 <p>Profesor de cursos y postgrados de la Escuela de Gobierno y de Diseño en UAI, CIAE de Universidad de Chile.</p>
 </section>
-<section id="profesora-var-profesor2.name" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="profesora-var-profesor2.name">Profesora: Cristina Caceres</h2>
-<p>Docente UAI, Arquitecto, Urbanista y Territorialista, email: <a href="mailto:mcristina.caceres@edu.uai.cl" class="email">mcristina.caceres@edu.uai.cl</a></p>
-<p>Arquitecto, Urbanista y Territorialista. Socia Fundadora de la oficina Spatial Data Studio. Máster en SIG aplicados a Urbanismo, Territorio y Paisaje de la Universidad Politécnica de Valencia, España. Diplomado Project Management de la Universidad Adolfo Ibáñez, Diplomado SIG de la Universidad de Chile, Estudios en Geo Estadística en la Universidad Adolfo Ibáñez, Curso Análisis Multivariante Aplicado en la Universidad de las Américas, Arquitecto de la Universidad de Talca. Docente de pregrado y postgrado en las Universidades UAI, UDLA, UNAB y UTALCA en asignaturas de Urbanismo, Territorio, Paisaje, SIG y Taller.</p>
+<section id="metodología" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="metodología"><span class="header-section-number">1.6</span> Metodología</h2>
+<p>El desarrollo del curso se llevará a cabo mediante las siguientes actividades:</p>
+<ul>
+<li>Clases expositivas: realizadas por el/la profesor/a donde se revisarán los aspectos conceptuales, teóricos y prácticos de las técnicas de análisis.</li>
+<li>Clases prácticas: realizadas por el/la profesor/a donde se revisarán los aspectos de implementación y ejecución del análisis de datos mediante código en R.</li>
+<li>Trabajos en clases: ejercicios prácticos.</li>
+<li>Proyecto de curso: realización de un proyecto práctico que resuelva algún problema de ciencia de datos geoespaciales utilizando las herramientas cubiertas en el curso.</li>
+</ul>
 </section>
-<section id="ayudante-var-ayudante.name" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="ayudante-var-ayudante.name">Ayudante: <a href="https://cit.uai.cl/felipe-matas/">Felipe Matas</a></h2>
-<p>Analista de investigación y desarrollo, Centro de Inteligencia Territorial - UAI, email: <a href="mailto:felipe.matas@edu.uai.cl" class="email">felipe.matas@edu.uai.cl</a></p>
-<p>Ingeniero Industrial con mención en energía. Levantamiento, implementación y desarrollo de nuevas tecnologías y metodologías, soporte a proyectos.</p>
-<p>Experiencia en programación, desarrollo de soluciones con TI, toma de muestras y análisis de de datos, probabilidades y Kernel Density. Ayudante en Curso de Ciencia de datos espaciales y Diplomado de Diseño territorial basado en evidencia.</p>
-</section>
-<section id="metodología" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="metodología"><span class="header-section-number">1.5</span> Metodología</h2>
-<p>El desarrollo del curso se llevará a cabo mediante las siguientes actividades: - Clases expositivas: realizadas por el/la profesor/a donde se revisarán los aspectos conceptuales, teóricos y prácticos de las técnicas de análisis. - Clases prácticas: realizadas por el/la profesor/a donde se revisarán los aspectos de implementación y ejecución del análisis de datos mediante código en R y aspectos de representación y visualización mediante aplicaciones web de ArcGis. - Trabajos en clases: ejercicios prácticos. - Proyecto de curso: realización de un proyecto práctico que resuelva algún problema de ciencia de datos geoespaciales utilizando las herramientas cubiertas en el curso.</p>
-</section>
-<section id="evaluación" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="evaluación"><span class="header-section-number">1.6</span> Evaluación</h2>
+<section id="evaluación" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="evaluación"><span class="header-section-number">1.7</span> Evaluación</h2>
 <p>El curso se evaluará a través de un proyecto grupal que se desarrollará durante todo el curso y se expondrá en la última clase. Este proyecto es el 100% de la nota del curso.</p>
 <p>En caso que el alumno no pueda asistir a la fecha de la presentación final, deberá justificar con certificado médico o laboral. Si es aceptada su justificación, podrá acceder a una segunda y última instancia de evaluación optando a la nota máxima de aprobación. De lo contrario tendrá nota 1.</p>
-</section>
-<section id="normas" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="normas"><span class="header-section-number">1.7</span> Normas</h2>
-<dl>
-<dt>Presencia Activa:</dt>
-<dd>
-<p>Este curso, por su metodología experiencial, requiere de una participación activa de los participantes. Es importante descubrir las fuentes de distracción y evitarlas. Las más usuales son lectura o escritura de e-mails, navegar por internet o utilizar redes sociales. Esto distrae a quien lo hace y restringe al resto del curso de su participación activa.</p>
-</dd>
-<dt>Puntualidad y Asistencia:</dt>
-<dd>
-<p>Será necesario ingresar a clases en forma puntual y permanecer en la misma sin salir, a menos que haya una urgencia. Se requerirá como mínimo un 75% de asistencia. Es importante que quien tuviera problemas para estar a tiempo o para asistir, se ponga en contacto lo antes posible con la coordinadora del curso.</p>
-</dd>
-<dt>Responsabilidad en los grupos (si aplica):</dt>
-<dd>
-<p>Todos los miembros del grupo han de contribuir al esfuerzo del equipo. Si surgen problemas con algún miembro del equipo, es responsabilidad de cada grupo tratar de resolverlo.</p>
-</dd>
-<dt>Grabación de clases:</dt>
-<dd>
-<p>La clase se grabará para apoyar a aquellos estudiantes que hayan tenido problemas de conectividad durante la sesión. Se disponibilizará por 60 días en la plataforma online del curso, para visualizar sin opción de descarga. Después de 60 días y por políticas de la Universidad para cursos sincrónicos, la clase se borra del servidor.</p>
-</dd>
-</dl>
 
 
 </section>
@@ -417,10 +341,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -430,8 +371,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -443,7 +393,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -487,6 +560,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -512,6 +586,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -575,15 +675,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro_r.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a R Project</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2023, Denis Berroeta</div>   
+    <div class="nav-footer-left">
+<p>Copyright 2024, Denis Berroeta</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -592,6 +694,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

@@ -3,31 +3,30 @@ project:
 
 book:
   title: "Gestión de Datos Espaciales"
-  subtitle: "Diplomado en Gestión y Evidencia Territorial - UAI"
+  subtitle: "Diplomado en Data y Evidencia Territorial - UAI"
   # affiliation-title: "Universidad Adolfo Ibáñez - Chile"
   author: "Centro de Inteligencia Territorial- UAI"
-  date: "2023-10-15"
+  date: "2024-7-13"
   #number-sections: 3
   page-footer: 
-    left: "Copyright 2023, Denis Berroeta" 
+    left: "Copyright 2024, Denis Berroeta" 
   chapters:
     - index.qmd
-    # - syllabus.qmd
-    - intro_r.qmd
-    - variables.qmd
-    - funciones.qmd
-    - datos_espaciales.qmd
-    - indicadores.qmd
-    - part: "Tareas"
-      chapters:
-        - tarea_final.qmd
+    # - intro_r.qmd
+    # - variables.qmd
+    # - funciones.qmd
+    # - datos_espaciales.qmd
+    # - indicadores.qmd
+    # - part: "Tareas"
+      # chapters:
+        # - tarea_final.qmd
     - references.qmd
         
-  appendices:
-    - recursos.qmd
-    - control_r.qmd
-    - tidyverse.qmd
-    - espacial_r.qmd
+  # appendices:
+  #   - recursos.qmd
+  #   - control_r.qmd
+  #   - tidyverse.qmd
+  #   - espacial_r.qmd
 
 bibliography: references.bib
 
