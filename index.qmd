@@ -34,24 +34,24 @@ En este curso proponemos un enfoque de análisis territorial aplicado utilizando
 
 <!-- ![](images/flujo_general.png){fig-align="center"} -->
 
-1.  Introducción a R y Lectura de Datos
-2.  Manipulación de Datos Espaciales
-3.  Representación Visual
-4.  Cartografías Online
-5.  Construcción de Indicadores Territoriales
-6.  Presentación Proyecto Grupal.
+<!-- 1.  Introducción a R y Lectura de Datos -->
+<!-- 2.  Manipulación de Datos Espaciales -->
+<!-- 3.  Representación Visual -->
+<!-- 4.  Cartografías Online -->
+<!-- 5.  Construcción de Indicadores Territoriales -->
+<!-- 6.  Presentación Proyecto Grupal. -->
 
-## Cronograma
+<!-- ## Cronograma -->
 
-![](images/horario_clases.png){fig-align="center"}
+![](images/flujo_gral.png){fig-align="center"}
 
-- S1: Introducción a la Estadística Espacial y a Datos Espaciales
-- S2: Introducción a R y Lectura de Datos
-- S3: R y Manejo de Datos Espaciales 
-- S4: Construcción de Indicadores Territoriales Socioeconómicos
-- S5: Desarrollo de Proyecto Grupal y Representación Visual
-- S6: Ayudantía
-- S7: Presentación Final de Proyecto Grupal
+<!-- - S1: Introducción a la Estadística Espacial y a Datos Espaciales -->
+<!-- - S2: Introducción a R y Lectura de Datos -->
+<!-- - S3: R y Manejo de Datos Espaciales  -->
+<!-- - S4: Construcción de Indicadores Territoriales Socioeconómicos -->
+<!-- - S5: Desarrollo de Proyecto Grupal y Representación Visual -->
+<!-- - S6: Ayudantía -->
+<!-- - S7: Presentación Final de Proyecto Grupal -->
 
 
 
@@ -62,7 +62,7 @@ email: {{< var profesor.email >}}
 
 Magíster en Inteligencia Artificial, Doctorado y Master en Data Science (cursando), Ingeniero en Prevención de Riesgos y Topógrafo. Tiene experiencia en modelamiento y análisis de datos espaciales, trabajando en diferentes proyectos de investigación públicos y privados en el Centro de Inteligencia Territorial de la Universidad Adolfo Ibáñez, donde se desempeña como coordinador de investigación, diseñando y gestionando la implementación de metodologías de análisis de datos territoriales. Posee experiencia como profesor en Geoestadísticas; Análisis Criminal, Análisis de imágenes satelitales para el monitoreo ambiental y Data Science. Tema de Tesis Detección de Cambios en Imágenes Radar con técnicas de deep learning.
 
-Profesor de cursos y postgrados de la Escuela de Gobierno y de Diseño en UAI, CIAE de Universidad de Chile.
+Profesor de cursos y postgrados de la Escuela de Gobierno y de Diseño en UAI.
 
 
 ## Metodología

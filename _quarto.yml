@@ -12,6 +12,7 @@ book:
     left: "Copyright 2024, Denis Berroeta" 
   chapters:
     - index.qmd
+    - intro_inds.qmd
     # - intro_r.qmd
     # - variables.qmd
     # - funciones.qmd

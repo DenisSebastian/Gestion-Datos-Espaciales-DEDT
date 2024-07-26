@@ -1,0 +1,166 @@
+---
+title: "Introducción a Indicadores Territoriales"
+subtitle: "Conceptos fundamentales"
+---
+
+![](images/S1.png){fig-align="center"}
+
+## Introducción
+
+Los indicadores territoriales son herramientas esenciales en el análisis espacial y la planificación territorial, proporcionando una representación cuantitativa de diversas dimensiones del desarrollo en un área geográfica específica. Estos indicadores son fundamentales para entender y evaluar el estado actual y las tendencias de los territorios en aspectos económicos, sociales, ambientales y de bienestar. Al ofrecer una visión integral y detallada del territorio, los indicadores territoriales permiten a los tomadores de decisiones, planificadores urbanos y académicos identificar fortalezas, debilidades, oportunidades y amenazas en sus respectivas áreas de interés.
+
+En esta primera sesión del curso, exploraremos los conceptos básicos y la importancia de los indicadores territoriales, así como introduciremos algunas de las principales herramientas y recursos disponibles para el análisis de estos indicadores. La sesión también incluirá una revisión de aplicaciones prácticas de indicadores territoriales a través de estudios de caso, destacando cómo se han utilizado en proyectos reales para evaluar políticas públicas y proyectos de desarrollo.
+
+## Definición y Conceptos Básicos
+
+### Indicadores
+
+Un indicador es un instrumento que proporciona información sobre una condición, situación, actividad o resultado específico. Este instrumento permite definir un punto de comparación para establecer diferencias entre individuos o respecto a sí mismo en diferentes momentos en el tiempo. Los indicadores se construyen mediante análisis y operaciones técnicas que entregan una medida cuantitativa (valor) o una descripción cualitativa (caracterización) de la magnitud o criterio que se pretende medir u observar.
+
+### Indicadores territoriales.
+
+![](images/ind_ter.png){fig-align="center" width="400"}
+
+Un indicador territorial es un instrumento que proporciona información específica sobre una condición, situación, actividad o resultado en un **área geográfica delimitada**. A diferencia de un indicador general, un indicador territorial integra la dimensión espacial en su análisis, permitiendo evaluar y comparar aspectos económicos, sociales, ambientales y de bienestar dentro de un territorio particular.
+
+## Tipos de Indicadores Territoriales
+
+![](images/ind_matriz.png){fig-align="center"}
+
+-   Indicadores Accesibilidad
+-   Indicadores sociodemográficos
+-   Indicadores seguridad
+-   Indicadores ambientales
+
+
+
+## Pasos para la Construcción de Indicadores T.
+![](images/pasos.png){fig-align="center"}
+
+1.  Presentación del Problema
+2.  Definir un Marco Teórico o de Referencia
+3.  Definición de Objetivos
+4.  Recolección de datos: fuentes de datos espaciales.
+5.  Cálculo de Indicador Territorial
+6.  Representación Espacial
+7.  Análisis de Resultados
+
+## Aplicaciones de Indicadores Territoriales
+
+![](images/aplicacion_ind.png){fig-align="center"}
+
+-   Diagnóstico Territorial
+-   Evolución Territorial
+-   Evaluación de Proyectos (impacto)
+-   Evaluación de Escenarios
+
+## Herramientas y Recursos para el Análisis de Indicadores T.
+
+
+Este conjunto de herramientas proporciona una base robusta para llevar a cabo análisis espaciales complejos, cada una con sus propias ventajas y aplicaciones específicas.
+
+### Plataformas de Análisis Espacial {.unnumbered}
+
+
+#### QGIS {.unnumbered}
+- **Descripción**: QGIS (Quantum GIS) es un Sistema de Información Geográfica (SIG) de código abierto que permite visualizar, editar y analizar datos espaciales. Es ampliamente utilizado por su capacidad de integrar diversos formatos de datos y su flexibilidad a través de complementos.
+- **Características**:
+  - Soporte para múltiples formatos de datos vectoriales y raster.
+  - Amplia gama de herramientas de análisis espacial.
+  - Comunidad activa y numerosos complementos disponibles.
+  - Interfaz personalizable y amigable.
+- **Enlace**: [QGIS](https://qgis.org)
+
+#### ArcGIS {.unnumbered}
+- **Descripción**: ArcGIS es una plataforma integral de SIG desarrollada por Esri. Es conocida por sus potentes herramientas de análisis, cartografía y gestión de datos espaciales, siendo una de las más utilizadas en entornos profesionales.
+- **Características**:
+  - Herramientas avanzadas de análisis espacial y geoprocesamiento.
+  - Amplia biblioteca de datos y modelos preconfigurados.
+  - Soporte para aplicaciones móviles y web.
+  - Capacidades robustas de visualización y creación de mapas.
+- **Enlace**: [ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview)
+
+### Lenguajes de Programaciónm  Análisis Espacial {.unnumbered}
+
+
+
+
+#### R {.unnumbered}
+- **Descripción**: R es un entorno y lenguaje de programación especializado en estadísticas y análisis de datos. A través de paquetes específicos, se utiliza ampliamente para análisis espacial y creación de mapas.
+- **Características**:
+  - Paquetes como `sf`, `sp`, `rgdal` para análisis espacial.
+  - `ggplot2` para visualización de datos y mapas.
+  - `raster` y `terra` para manipulación de datos raster.
+  - Integración con otros lenguajes y herramientas de análisis.
+- **Enlace**: [R](https://www.r-project.org)
+
+#### Python {.unnumbered}
+- **Descripción**: Python es un lenguaje de programación versátil que, a través de diversas bibliotecas, se ha convertido en una herramienta poderosa para el análisis espacial y el manejo de datos geoespaciales.
+- **Características**:
+  - Bibliotecas como `geopandas`, `shapely`, `fiona` para manipulación de datos espaciales.
+  - `matplotlib` y `seaborn` para visualización de datos.
+  - `scikit-learn` y `tensorflow` para integración de aprendizaje automático.
+  - Comunidad extensa y abundante documentación.
+- **Enlace**: [Python](https://www.python.org)
+
+![[Source: Carto - What is Spatial Data Science?](https://carto.com/what-is-spatial-data-science)](images/spatial-analysis-languages.png){fig-align="center" width="400"}
+
+
+### Fuentes de datos Espaciales
+
+#### Censo de Población y Vivienda {.unnumbered}
+- **Descripción**: El Censo de Población y Vivienda se realiza cada diez años y ofrece un conteo exhaustivo de la población y sus características demográficas, económicas y de vivienda. Es una fuente crítica de datos para la planificación y desarrollo de políticas a nivel nacional y local.
+- **Enlace**: [Censo](http://www.censo2017.cl/)
+
+#### Encuesta Nacional de Uso del Tiempo (ENUT) {.unnumbered}
+- **Descripción**: La Encuesta Nacional de Uso del Tiempo (ENUT) proporciona información detallada sobre cómo las personas distribuyen su tiempo en diversas actividades, incluyendo trabajo remunerado, trabajo no remunerado, educación, ocio y cuidados. Es una herramienta clave para analizar la distribución del trabajo y la desigualdad de género en el uso del tiempo.
+- **Enlace**: [ENUT](https://www.ine.gob.cl/enut)
+
+#### Encuesta de Caracterización Socioeconómica Nacional (CASEN){.unnumbered}
+- **Descripción**: La Encuesta de Caracterización Socioeconómica Nacional (CASEN) es la principal fuente de datos sobre las condiciones socioeconómicas de los hogares en Chile. Proporciona información sobre ingresos, educación, salud, vivienda y otras dimensiones del bienestar, siendo fundamental para el diseño y evaluación de políticas públicas.
+- **Enlace**: [CASEN](https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022)
+
+
+
+#### Encuesta de Presupuestos Familiares (EPF) {.unnumbered}
+- **Descripción**: La Encuesta de Presupuestos Familiares (EPF) proporciona información sobre los ingresos y gastos de los hogares chilenos, permitiendo el análisis de la estructura del consumo y las condiciones de vida de la población.
+- **Enlace**: [EPF](https://www.ine.gob.cl/estadisticas/sociales/ingresos-y-gastos/encuesta-de-presupuestos-familiares)
+
+#### Encuesta Nacional de Empleo (ENE) {.unnumbered}
+- **Descripción**: La Encuesta Nacional de Empleo (ENE) ofrece datos sobre la situación laboral de la población, incluyendo tasas de empleo, desempleo y subempleo, así como características de la fuerza laboral.
+- **Enlace**: [ENE](https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion)
+
+#### Encuesta de Victimización (ENUSC) {.unnumbered}
+- **Descripción**: La Encuesta Nacional Urbana de Seguridad Ciudadana (ENUSC) proporciona datos sobre la percepción de seguridad y la prevalencia de delitos en la población urbana de Chile.
+- **Enlace**: [ENUSC](https://www.ine.gob.cl/enusc)
+
+#### Sistema Nacional de Información Municipal (SINIM) {.unnumbered}
+- **Descripción**: El Sistema Nacional de Información Municipal (SINIM) ofrece información sobre la gestión y desempeño de los municipios en Chile, incluyendo datos financieros, de infraestructura y servicios.
+- **Enlace**: [SINIM](https://datos.sinim.gov.cl/)
+
+
+#### Datos.gob{.unnumbered}
+- **Descripción**: Datos.gob el repositorio de datos abiertos centralizado del Estado. En este portal encontrarás datos y estadísticas del sector público, para distintos fines, como aplicaciones, visualizaciones, investigación, etc.
+- **Enlace**: [datos.gob.cl](https://datos.gob.cl/)
+
+### IDE Chile{.unnumbered}
+- **Descripción**: La Infraestructura de Datos Geoespaciales de Chile (IDE Chile), dependiente del Ministerio de Bienes Nacionales.
+- **Enlace**: [IDE Chile](https://www.geoportal.cl/catalog)
+
+
+
+Estas fuentes de datos proporcionan una base sólida para el análisis de diversas dimensiones del desarrollo en Chile, siendo de gran utilidad para investigadores, planificadores y tomadores de decisiones.
+
+
+
+## Discusión
+
+¿Existen consideraciones **éticas** en procesode construción de Indicadores que pudiera inducir a sesgos?
+
+## Estudios de caso
+
+![](images/casos.png){fig-align="center"}
+
+## Lecturas y Recursos Adicionales
+
+- [Plataforma de MBHT](https://plataformabht.subdere.gov.cl/)
