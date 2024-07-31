@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
+<link href="./analisis_esp.html" rel="next">
 <link href="./index.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -121,10 +121,57 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./analisis_esp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis Espacial</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./inferencia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Inferencia Espacial</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./construccion_inds.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Construcción de Indicadores Territoriales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introducción a R Project</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./recursos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Instalación de Recursos</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./john_snow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mapa de Cólera</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -148,8 +195,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#plataformas-de-análisis-espacial" id="toc-plataformas-de-análisis-espacial" class="nav-link" data-scroll-target="#plataformas-de-análisis-espacial">Plataformas de Análisis Espacial</a></li>
   <li><a href="#lenguajes-de-programaciónm-análisis-espacial" id="toc-lenguajes-de-programaciónm-análisis-espacial" class="nav-link" data-scroll-target="#lenguajes-de-programaciónm-análisis-espacial">Lenguajes de Programaciónm Análisis Espacial</a></li>
-  <li><a href="#fuentes-de-datos-espaciales" id="toc-fuentes-de-datos-espaciales" class="nav-link" data-scroll-target="#fuentes-de-datos-espaciales"><span class="header-section-number">2.6.1</span> Fuentes de datos Espaciales</a></li>
-  <li><a href="#ide-chile" id="toc-ide-chile" class="nav-link" data-scroll-target="#ide-chile">IDE Chile</a></li>
   </ul></li>
   <li><a href="#discusión" id="toc-discusión" class="nav-link" data-scroll-target="#discusión"><span class="header-section-number">2.7</span> Discusión</a></li>
   <li><a href="#estudios-de-caso" id="toc-estudios-de-caso" class="nav-link" data-scroll-target="#estudios-de-caso"><span class="header-section-number">2.8</span> Estudios de caso</a></li>
@@ -228,13 +273,13 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ol type="1">
-<li>Presentación del Problema</li>
-<li>Definir un Marco Teórico o de Referencia</li>
-<li>Definición de Objetivos</li>
-<li>Recolección de datos: fuentes de datos espaciales.</li>
-<li>Cálculo de Indicador Territorial</li>
-<li>Representación Espacial</li>
-<li>Análisis de Resultados</li>
+<li>Presentación del Problema: Introducción al contexto y naturaleza del problema que se desea abordar con los indicadores territoriales.</li>
+<li>Definir un Marco Teórico o de Referencia: Establecer las teorías, conceptos y estudios previos que guiarán el análisis y la construcción de indicadores.</li>
+<li>Definición de Objetivos: Clarificación de lo que se espera lograr con el estudio y la construcción de indicadores territoriales.</li>
+<li>Recolección de datos: Identificación y recopilación de los datos necesarios para calcular los indicadores territoriales.</li>
+<li>Cálculo de Indicador Territorial: Proceso de cálculo del indicador territorial a partir de los datos recolectados.</li>
+<li>Representación Espacial: Visualización de los indicadores territoriales mediante cartografía.</li>
+<li>Análisis de Resultados: Interpretación y evaluación de los resultados obtenidos a partir de los indicadores territoriales.</li>
 </ol>
 </section>
 <section id="aplicaciones-de-indicadores-territoriales" class="level2" data-number="2.5">
@@ -247,8 +292,8 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Diagnóstico Territorial</li>
 <li>Evolución Territorial</li>
-<li>Evaluación de Proyectos (impacto)</li>
 <li>Evaluación de Escenarios</li>
+<li>Evaluación de Proyectos (impacto a largo plazo)</li>
 </ul>
 </section>
 <section id="herramientas-y-recursos-para-el-análisis-de-indicadores-t." class="level2 page-columns page-full" data-number="2.6">
@@ -321,73 +366,6 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 </section>
-</section>
-<section id="fuentes-de-datos-espaciales" class="level3" data-number="2.6.1">
-<h3 data-number="2.6.1" class="anchored" data-anchor-id="fuentes-de-datos-espaciales"><span class="header-section-number">2.6.1</span> Fuentes de datos Espaciales</h3>
-<section id="censo-de-población-y-vivienda" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="censo-de-población-y-vivienda">Censo de Población y Vivienda</h4>
-<ul>
-<li><strong>Descripción</strong>: El Censo de Población y Vivienda se realiza cada diez años y ofrece un conteo exhaustivo de la población y sus características demográficas, económicas y de vivienda. Es una fuente crítica de datos para la planificación y desarrollo de políticas a nivel nacional y local.</li>
-<li><strong>Enlace</strong>: <a href="http://www.censo2017.cl/">Censo</a></li>
-</ul>
-</section>
-<section id="encuesta-nacional-de-uso-del-tiempo-enut" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="encuesta-nacional-de-uso-del-tiempo-enut">Encuesta Nacional de Uso del Tiempo (ENUT)</h4>
-<ul>
-<li><strong>Descripción</strong>: La Encuesta Nacional de Uso del Tiempo (ENUT) proporciona información detallada sobre cómo las personas distribuyen su tiempo en diversas actividades, incluyendo trabajo remunerado, trabajo no remunerado, educación, ocio y cuidados. Es una herramienta clave para analizar la distribución del trabajo y la desigualdad de género en el uso del tiempo.</li>
-<li><strong>Enlace</strong>: <a href="https://www.ine.gob.cl/enut">ENUT</a></li>
-</ul>
-</section>
-<section id="encuesta-de-caracterización-socioeconómica-nacional-casen" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="encuesta-de-caracterización-socioeconómica-nacional-casen">Encuesta de Caracterización Socioeconómica Nacional (CASEN)</h4>
-<ul>
-<li><strong>Descripción</strong>: La Encuesta de Caracterización Socioeconómica Nacional (CASEN) es la principal fuente de datos sobre las condiciones socioeconómicas de los hogares en Chile. Proporciona información sobre ingresos, educación, salud, vivienda y otras dimensiones del bienestar, siendo fundamental para el diseño y evaluación de políticas públicas.</li>
-<li><strong>Enlace</strong>: <a href="https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2022">CASEN</a></li>
-</ul>
-</section>
-<section id="encuesta-de-presupuestos-familiares-epf" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="encuesta-de-presupuestos-familiares-epf">Encuesta de Presupuestos Familiares (EPF)</h4>
-<ul>
-<li><strong>Descripción</strong>: La Encuesta de Presupuestos Familiares (EPF) proporciona información sobre los ingresos y gastos de los hogares chilenos, permitiendo el análisis de la estructura del consumo y las condiciones de vida de la población.</li>
-<li><strong>Enlace</strong>: <a href="https://www.ine.gob.cl/estadisticas/sociales/ingresos-y-gastos/encuesta-de-presupuestos-familiares">EPF</a></li>
-</ul>
-</section>
-<section id="encuesta-nacional-de-empleo-ene" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="encuesta-nacional-de-empleo-ene">Encuesta Nacional de Empleo (ENE)</h4>
-<ul>
-<li><strong>Descripción</strong>: La Encuesta Nacional de Empleo (ENE) ofrece datos sobre la situación laboral de la población, incluyendo tasas de empleo, desempleo y subempleo, así como características de la fuerza laboral.</li>
-<li><strong>Enlace</strong>: <a href="https://www.ine.gob.cl/estadisticas/sociales/mercado-laboral/ocupacion-y-desocupacion">ENE</a></li>
-</ul>
-</section>
-<section id="encuesta-de-victimización-enusc" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="encuesta-de-victimización-enusc">Encuesta de Victimización (ENUSC)</h4>
-<ul>
-<li><strong>Descripción</strong>: La Encuesta Nacional Urbana de Seguridad Ciudadana (ENUSC) proporciona datos sobre la percepción de seguridad y la prevalencia de delitos en la población urbana de Chile.</li>
-<li><strong>Enlace</strong>: <a href="https://www.ine.gob.cl/enusc">ENUSC</a></li>
-</ul>
-</section>
-<section id="sistema-nacional-de-información-municipal-sinim" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="sistema-nacional-de-información-municipal-sinim">Sistema Nacional de Información Municipal (SINIM)</h4>
-<ul>
-<li><strong>Descripción</strong>: El Sistema Nacional de Información Municipal (SINIM) ofrece información sobre la gestión y desempeño de los municipios en Chile, incluyendo datos financieros, de infraestructura y servicios.</li>
-<li><strong>Enlace</strong>: <a href="https://datos.sinim.gov.cl/">SINIM</a></li>
-</ul>
-</section>
-<section id="datos.gob" class="level4 unnumbered">
-<h4 class="unnumbered anchored" data-anchor-id="datos.gob">Datos.gob</h4>
-<ul>
-<li><strong>Descripción</strong>: Datos.gob el repositorio de datos abiertos centralizado del Estado. En este portal encontrarás datos y estadísticas del sector público, para distintos fines, como aplicaciones, visualizaciones, investigación, etc.</li>
-<li><strong>Enlace</strong>: <a href="https://datos.gob.cl/">datos.gob.cl</a></li>
-</ul>
-</section>
-</section>
-<section id="ide-chile" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="ide-chile">IDE Chile</h3>
-<ul>
-<li><strong>Descripción</strong>: La Infraestructura de Datos Geoespaciales de Chile (IDE Chile), dependiente del Ministerio de Bienes Nacionales.</li>
-<li><strong>Enlace</strong>: <a href="https://www.geoportal.cl/catalog">IDE Chile</a></li>
-</ul>
-<p>Estas fuentes de datos proporcionan una base sólida para el análisis de diversas dimensiones del desarrollo en Chile, siendo de gran utilidad para investigadores, planificadores y tomadores de decisiones.</p>
 </section>
 </section>
 <section id="discusión" class="level2" data-number="2.7">
@@ -828,8 +806,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./analisis_esp.html" class="pagination-link" aria-label="Análisis Espacial">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis Espacial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

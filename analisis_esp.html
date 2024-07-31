@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gestión de Datos Espaciales - Appendix A — Instalación de Recursos</title>
+<title>Gestión de Datos Espaciales - 3&nbsp; Análisis Espacial</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./john_snow.html" rel="next">
-<link href="./references.html" rel="prev">
+<link href="./inferencia.html" rel="next">
+<link href="./intro_inds.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -73,7 +93,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -82,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recursos.html">Appendices</a></li><li class="breadcrumb-item"><a href="./recursos.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Instalación de Recursos</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./analisis_esp.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis Espacial</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -121,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./analisis_esp.html" class="sidebar-item-text sidebar-link">
+  <a href="./analisis_esp.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis Espacial</span></span></a>
   </div>
 </li>
@@ -160,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./recursos.html" class="sidebar-item-text sidebar-link active">
+  <a href="./recursos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Instalación de Recursos</span></span></a>
   </div>
 </li>
@@ -182,21 +202,30 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-installR" id="toc-sec-installR" class="nav-link active" data-scroll-target="#sec-installR"><span class="header-section-number">A.1</span> Instalación de R Project</a></li>
-  <li><a href="#sec-installRStudio" id="toc-sec-installRStudio" class="nav-link" data-scroll-target="#sec-installRStudio"><span class="header-section-number">A.2</span> Instalación de RStudio</a>
+  <li><a href="#relaciones-espaciales" id="toc-relaciones-espaciales" class="nav-link active" data-scroll-target="#relaciones-espaciales"><span class="header-section-number">3.1</span> Relaciones Espaciales</a>
   <ul class="collapse">
-  <li><a href="#rstudio-cloud" id="toc-rstudio-cloud" class="nav-link" data-scroll-target="#rstudio-cloud"><span class="header-section-number">A.2.1</span> RStudio Cloud</a></li>
+  <li><a href="#orígenes-del-análisis-espacial" id="toc-orígenes-del-análisis-espacial" class="nav-link" data-scroll-target="#orígenes-del-análisis-espacial">Orígenes del Análisis Espacial</a></li>
+  <li><a href="#estadística-vs-estadística-espacial" id="toc-estadística-vs-estadística-espacial" class="nav-link" data-scroll-target="#estadística-vs-estadística-espacial"><span class="header-section-number">3.1.1</span> Estadística vs Estadística Espacial</a></li>
+  <li><a href="#condideraciones-generales" id="toc-condideraciones-generales" class="nav-link" data-scroll-target="#condideraciones-generales"><span class="header-section-number">3.1.2</span> Condideraciones generales</a></li>
   </ul></li>
+  <li><a href="#ejemplos-de-correlación-espacial" id="toc-ejemplos-de-correlación-espacial" class="nav-link" data-scroll-target="#ejemplos-de-correlación-espacial"><span class="header-section-number">3.2</span> Ejemplos de Correlación Espacial</a>
+  <ul class="collapse">
+  <li><a href="#autoproducción-tráfico-de-drogas" id="toc-autoproducción-tráfico-de-drogas" class="nav-link" data-scroll-target="#autoproducción-tráfico-de-drogas"><span class="header-section-number">3.2.1</span> Autoproducción: Tráfico de Drogas</a></li>
+  <li><a href="#co-producción-mercado-inmobiliario-local" id="toc-co-producción-mercado-inmobiliario-local" class="nav-link" data-scroll-target="#co-producción-mercado-inmobiliario-local"><span class="header-section-number">3.2.2</span> Co-producción: Mercado inmobiliario local</a></li>
+  <li><a href="#segregación-y-delincuencia" id="toc-segregación-y-delincuencia" class="nav-link" data-scroll-target="#segregación-y-delincuencia"><span class="header-section-number">3.2.3</span> Segregación y delincuencia</a></li>
+  <li><a href="#valores-de-vivienda" id="toc-valores-de-vivienda" class="nav-link" data-scroll-target="#valores-de-vivienda"><span class="header-section-number">3.2.4</span> Valores de Vivienda</a></li>
+  </ul></li>
+  <li><a href="#inconsistencia-estadística-de-datos-espaciales-agregados-maup" id="toc-inconsistencia-estadística-de-datos-espaciales-agregados-maup" class="nav-link" data-scroll-target="#inconsistencia-estadística-de-datos-espaciales-agregados-maup"><span class="header-section-number">3.3</span> Inconsistencia estadística de datos espaciales agregados: MAUP</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./recursos.html">Appendices</a></li><li class="breadcrumb-item"><a href="./recursos.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Instalación de Recursos</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix A — Instalación de Recursos</h1>
-<p class="subtitle lead">Introducción al Lenguaje de Programación</p>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Análisis Espacial</span></h1>
+<p class="subtitle lead">Introducción y fundamentos</p>
 </div>
 
 
@@ -213,80 +242,150 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="sec-installR" class="level2" data-number="A.1">
-<h2 data-number="A.1" class="anchored" data-anchor-id="sec-installR"><span class="header-section-number">A.1</span> Instalación de R Project</h2>
-<div class="quarto-figure quarto-figure-left">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/R_logo.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="100"></p>
+<p><img src="images/S2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<p>Primero se debe instalar R Project desde su sitio oficial <a href="https://cran.r-project.org/index.html">https://cran.r-project.org/index.html</a>, se ejecuta el instalador que se descarga dependiendo del sistema operativo del PC, como se muestra en las siguientes figuras:</p>
-<p><img src="images/install_r.png" class="img-fluid"></p>
-<p><br></p>
-<p><strong>Instalación de <a href="https://cran.r-project.org/bin/windows/">R para Windows</a></strong></p>
-<center>
-<img src="images/install_r_w.gif" class="img-fluid" style="width:90.0%">
-</center>
-<p><br></p>
-<p><strong>Instalar <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a> (solo Sistema Operativo Windows)</strong></p>
-<center>
-<img src="images/w_rtools.png" class="img-fluid" style="width:60.0%">
-</center>
-<center>
-<img src="images/install_rtools.png" class="img-fluid" style="width:60.0%">
-</center>
-<p><br></p>
-<p><strong>Instalación de <a href="https://cran.r-project.org/bin/macosx/">R para Mac</a></strong></p>
-<center>
-<img src="images/install_r_mac.gif" class="img-fluid" style="width:90.0%">
-</center>
-<p><br></p>
-<p><strong>R Project Ejecutándose</strong></p>
-<p><img src="images/r_project.png" class="img-fluid"></p>
+<section id="relaciones-espaciales" class="level2 page-columns page-full" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="relaciones-espaciales"><span class="header-section-number">3.1</span> Relaciones Espaciales</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/w_spatial.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<section id="orígenes-del-análisis-espacial" class="level3 unnumbered page-columns page-full">
+<h3 class="unnumbered anchored" data-anchor-id="orígenes-del-análisis-espacial">Orígenes del Análisis Espacial</h3>
+<p>Estadística deriva del italiano statista (hombre de Estado) y se desarrolla desde la antigüedad para facilitar la gestión tributaria y estimar la capacidad bélica de un reino. Ej: censos egipcios desde el 3050 a.C.</p>
+<p>Durante la expansión de los imperios coloniales (siglos XVI - XIX) se desarrolla la estadística en estrecha relación con la cartografía, principalmente para la administración y dominio de territorios.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/mapa_africa.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="margin-caption">Origen de la Estadística</figcaption>
+</figure>
+</div>
+<p>La estadística es una herramienta fundamental en la ciencia de datos que nos permite comprender y analizar datos para obtener información significativa. En términos simples, es como un lenguaje que utilizamos para describir, resumir y tomar decisiones basadas en la información que los datos nos proporcionan. Al aplicar métodos estadísticos, podemos identificar patrones, tendencias y relaciones en los datos, lo que es esencial tanto para la investigación académica como para la toma de decisiones en el mundo real.</p>
 </section>
-<section id="sec-installRStudio" class="level2" data-number="A.2">
-<h2 data-number="A.2" class="anchored" data-anchor-id="sec-installRStudio"><span class="header-section-number">A.2</span> Instalación de RStudio</h2>
-<div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Logo-RStudio.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="100"></p>
-</figure>
-</div>
-<p>Se recomienta instalar <a href="https://posit.co/products/open-source/rstudio/">RStudio</a> desde el siguiente <a href="https://posit.co/download/rstudio-desktop/">link</a>, que es Interfaz de Usuario de R Project, desde su sitio web oficial, el cual permite acceder con mayor facilidad a sus funciones y potencialidades de R.</p>
-<center>
-<img src="images/instaladores_rstudio.png" class="img-fluid" style="width:60.0%">
-</center>
-<p><img src="images/Install_RStudio.png" class="img-fluid"></p>
-<p><img src="images/rstudio.png" class="img-fluid"></p>
-<center>
-<img src="images/rstudio-editor.svg" class="img-fluid" style="width:90.0%">
-</center>
-<section id="rstudio-cloud" class="level3" data-number="A.2.1">
-<h3 data-number="A.2.1" class="anchored" data-anchor-id="rstudio-cloud"><span class="header-section-number">A.2.1</span> RStudio Cloud</h3>
-<p><a href="https://rstudio.cloud">RStudio Cloud</a> es una versión ligera del IDE RStudio alojada en la la nube que permite a cualquiera hacer, compartir, enseñar y aprender Ciencias de Datos Online. Tiene una versión gratuita limitada.</p>
-<section id="características" class="level4" data-number="A.2.1.1">
-<h4 data-number="A.2.1.1" class="anchored" data-anchor-id="características"><span class="header-section-number">A.2.1.1</span> Características:</h4>
+<section id="estadística-vs-estadística-espacial" class="level3 page-columns page-full" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="estadística-vs-estadística-espacial"><span class="header-section-number">3.1.1</span> Estadística vs Estadística Espacial</h3>
+<p>La estadística en general es una disciplina amplia que se aplica a diversos tipos de datos y problemas, utilizando métodos estadísticos convencionales. La estadística espacial, por otro lado, se enfoca en datos con ubicaciones geográficas explícitas y se especializa en el análisis de la dependencia espacial y la modelización de patrones espaciales.</p>
+<p><strong>Estadística:</strong></p>
 <ul>
-<li>Analyze your data using the RStudio IDE, directly from your browser.</li>
-<li>Share projects with your team, class, workshop or the world.</li>
-<li>Teach data science with R to your students or colleagues.</li>
-<li>Learn data science in an instructor-led environment or with interactive tutorials.</li>
+<li>Análisis de la estructura de datos representativos de una población (en áreas arbitrarias)</li>
+<li>Se basa en matemáticas relativamente complejas</li>
 </ul>
-<center>
-<img src="images/Rstudio_cloud_page.png" class="img-fluid" style="width:90.0%">
-</center>
-<center>
-<img src="images/rstudio_logging.png" class="img-fluid" style="width:90.0%">
-</center>
-<center>
-<img src="images/rstudio_workspace.png" class="img-fluid" style="width:90.0%">
-</center>
-<center>
-<img src="images/rstudio_cloud.png" class="img-fluid" style="width:90.0%">
-</center>
-
-
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/gauss_graph.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="margin-caption">Distribución normal en estadística</figcaption>
+</figure>
+</div>
+<p><strong>Geoestadística</strong></p>
+<ul>
+<li>Análisis de relaciones de dependencia espacial entre datos georreferenciados y modelamiento de datos espacilizados.</li>
+<li>Complejidad de cálculo que hacía inviable su uso masivo</li>
+</ul>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/dep_espacial.png" class="img-fluid figure-img" width="400"></p>
+<figcaption class="margin-caption">Dependencia espacial en geoestadística</figcaption>
+</figure>
+</div>
+</section>
+<section id="condideraciones-generales" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="condideraciones-generales"><span class="header-section-number">3.1.2</span> Condideraciones generales</h3>
+<p>La inferencia estadística convencional se basa en dos supuestos fundamentales</p>
+<ul>
+<li><p>Los valores de una variable se distribuyen de forma aleatoria</p></li>
+<li><p>Los valores de una variable son independientes unos de otros</p></li>
+</ul>
+<p>Pero ninguno de estos dos supuestos se cumple al utilizar datos espaciales, ya que:</p>
+<ul>
+<li><p>Los fenómenos más próximos en el espacio están más estrechamente relacionados entre sí. Ley de <span class="citation" data-cites="Tobler_1970">Tobler (<a href="references.html#ref-Tobler_1970" role="doc-biblioref">1970</a>)</span></p></li>
+<li><p>La historia, el espacio y la sociedad se co-producen, por lo que el espacio tiene un rol activo en la reproducción y acumulación de fenómenos sociales. <span class="citation" data-cites="Lefebvre_1974">Lefebvre (<a href="references.html#ref-Lefebvre_1974" role="doc-biblioref">1974</a>)</span></p></li>
+</ul>
+<p>Para resolver esta limitación existen dos enfoques principales</p>
+<ul>
+<li>La econometría espacial, que trata el efecto espacial como un error y lo elimina para generar estimaciones sin sesgo</li>
+<li>La geoestadística, que identifica y cuantifica el efecto que el espacio genera en la estructura de la información</li>
+</ul>
 </section>
 </section>
+<section id="ejemplos-de-correlación-espacial" class="level2 page-columns page-full" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="ejemplos-de-correlación-espacial"><span class="header-section-number">3.2</span> Ejemplos de Correlación Espacial</h2>
+<section id="autoproducción-tráfico-de-drogas" class="level3 page-columns page-full" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="autoproducción-tráfico-de-drogas"><span class="header-section-number">3.2.1</span> Autoproducción: Tráfico de Drogas</h3>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/drogas_autoproducion.png" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Autoproducción Espacial en tráfico de Drogas</figcaption>
+</figure>
+</div>
+</section>
+<section id="co-producción-mercado-inmobiliario-local" class="level3 page-columns page-full" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="co-producción-mercado-inmobiliario-local"><span class="header-section-number">3.2.2</span> Co-producción: Mercado inmobiliario local</h3>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/mercado_inmob.png" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Co-producción Espacial en Mercado inmobiliario local</figcaption>
+</figure>
+</div>
+</section>
+<section id="segregación-y-delincuencia" class="level3 page-columns page-full" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="segregación-y-delincuencia"><span class="header-section-number">3.2.3</span> Segregación y delincuencia</h3>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="images/lc_vulnerabilidad.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="images/lc_delitos_dom.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<p><img src="images/LC_delitos_drogas.png" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/segregacion_del.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<figcaption class="margin-caption">Segregación y delincuencia</figcaption>
+</figure>
+</div>
+</section>
+<section id="valores-de-vivienda" class="level3 page-columns page-full" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="valores-de-vivienda"><span class="header-section-number">3.2.4</span> Valores de Vivienda</h3>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/val_vivienda.png" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Valores de Vivienda</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="inconsistencia-estadística-de-datos-espaciales-agregados-maup" class="level2 page-columns page-full" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="inconsistencia-estadística-de-datos-espaciales-agregados-maup"><span class="header-section-number">3.3</span> Inconsistencia estadística de datos espaciales agregados: MAUP</h2>
+<p><strong>Modifiable Areal Unit Problem</strong>: inconsistencia de indicadores estadísticos al modificar los perímetros de agregación (Gehlke &amp; Biehl 1934, Openshaw &amp; Taylor 1979)</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/maup.png" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Modifiable Areal Unit Problem</figcaption>
+</figure>
+</div>
+<p>En general, es recomendable trabajar con datos a la menor escala posible, o agregarlos en zonas homogéneas</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Lefebvre_1974" class="csl-entry" role="listitem">
+Lefebvre, Henri. 1974. <span>“La Production de l<span></span>espace.”</span> <em>L Homme Et La Soci<span>é</span>t<span>é</span></em> 31 (1): 15–32. <a href="https://doi.org/10.3406/homso.1974.1855">https://doi.org/10.3406/homso.1974.1855</a>.
+</div>
+<div id="ref-Tobler_1970" class="csl-entry" role="listitem">
+Tobler, W. R. 1970. <span>“A Computer Movie Simulating Urban Growth in the Detroit Region.”</span> <em>Economic Geography</em> 46 (June): 234. <a href="https://doi.org/10.2307/143141">https://doi.org/10.2307/143141</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -701,13 +800,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">References</span>
+      <a href="./intro_inds.html" class="pagination-link" aria-label="Introducción a Indicadores Territoriales">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introducción a Indicadores Territoriales</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./john_snow.html" class="pagination-link" aria-label="Mapa de Cólera">
-        <span class="nav-page-text">Mapa de Cólera</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./inferencia.html" class="pagination-link" aria-label="Inferencia Espacial">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Inferencia Espacial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
