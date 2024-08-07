@@ -197,6 +197,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./datos_espaciales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Datos Espaciales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./indicadores.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores Territoriales</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">References</span></a>
   </div>
@@ -237,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Contenidos</h2>
    
   <ul>
   <li><a href="#motivación" id="toc-motivación" class="nav-link active" data-scroll-target="#motivación"><span class="header-section-number">6.1</span> Motivación</a></li>
@@ -245,17 +257,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#ventajas-de-utilizar-r-project" id="toc-ventajas-de-utilizar-r-project" class="nav-link" data-scroll-target="#ventajas-de-utilizar-r-project"><span class="header-section-number">6.2.1</span> Ventajas de Utilizar R Project</a></li>
   </ul></li>
-  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio"><span class="header-section-number">6.3</span> Rstudio</a>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link" data-scroll-target="#rstudio"><span class="header-section-number">6.3</span> Rstudio</a></li>
+  <li><a href="#librerías-en-r" id="toc-librerías-en-r" class="nav-link" data-scroll-target="#librerías-en-r"><span class="header-section-number">6.4</span> Librerías en R</a>
   <ul class="collapse">
-  <li><a href="#librerías-en-r" id="toc-librerías-en-r" class="nav-link" data-scroll-target="#librerías-en-r"><span class="header-section-number">6.3.1</span> Librerías en R</a></li>
-  <li><a href="#ejemplo-de-instalación-de-librerías-desde-r" id="toc-ejemplo-de-instalación-de-librerías-desde-r" class="nav-link" data-scroll-target="#ejemplo-de-instalación-de-librerías-desde-r"><span class="header-section-number">6.3.2</span> Ejemplo de Instalación de Librerías desde R</a></li>
-  <li><a href="#ejemplo-de-instalación-de-librerías-desde-rstudio" id="toc-ejemplo-de-instalación-de-librerías-desde-rstudio" class="nav-link" data-scroll-target="#ejemplo-de-instalación-de-librerías-desde-rstudio"><span class="header-section-number">6.3.3</span> Ejemplo de Instalación de Librerías desde Rstudio</a></li>
+  <li><a href="#ejemplo-de-instalación-de-librerías-desde-r" id="toc-ejemplo-de-instalación-de-librerías-desde-r" class="nav-link" data-scroll-target="#ejemplo-de-instalación-de-librerías-desde-r"><span class="header-section-number">6.4.1</span> Ejemplo de Instalación de Librerías desde R</a></li>
+  <li><a href="#ejemplo-de-instalación-de-librerías-desde-rstudio" id="toc-ejemplo-de-instalación-de-librerías-desde-rstudio" class="nav-link" data-scroll-target="#ejemplo-de-instalación-de-librerías-desde-rstudio"><span class="header-section-number">6.4.2</span> Ejemplo de Instalación de Librerías desde Rstudio</a></li>
   </ul></li>
-  <li><a href="#directorios-de-trabajos" id="toc-directorios-de-trabajos" class="nav-link" data-scroll-target="#directorios-de-trabajos"><span class="header-section-number">6.4</span> Directorios de Trabajos</a>
+  <li><a href="#directorios-de-trabajos" id="toc-directorios-de-trabajos" class="nav-link" data-scroll-target="#directorios-de-trabajos"><span class="header-section-number">6.5</span> Directorios de Trabajos</a>
   <ul class="collapse">
-  <li><a href="#directorios-de-trabajo-en-rstudio" id="toc-directorios-de-trabajo-en-rstudio" class="nav-link" data-scroll-target="#directorios-de-trabajo-en-rstudio"><span class="header-section-number">6.4.1</span> Directorios de Trabajo en RStudio</a></li>
+  <li><a href="#directorios-de-trabajo-en-rstudio" id="toc-directorios-de-trabajo-en-rstudio" class="nav-link" data-scroll-target="#directorios-de-trabajo-en-rstudio"><span class="header-section-number">6.5.1</span> Directorios de Trabajo en RStudio</a></li>
   </ul></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">6.5</span> Referencias:</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">6.6</span> Referencias:</a></li>
   </ul>
 </nav>
     </div>
@@ -387,8 +399,9 @@ R fomenta la reproducibilidad de tu trabajo. Puedes documentar tus análisis y v
 <center>
 <img src="images/rstudio-editor.svg" class="img-fluid" style="width:90.0%">
 </center>
-<section id="librerías-en-r" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="librerías-en-r"><span class="header-section-number">6.3.1</span> Librerías en R</h3>
+</section>
+<section id="librerías-en-r" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="librerías-en-r"><span class="header-section-number">6.4</span> Librerías en R</h2>
 <p>En R, una librería es un conjunto de funciones, datos y recursos adicionales que se agrupan para facilitar tareas específicas de programación, análisis de datos o visualización. Estas librerías son paquetes de software que amplían las funcionalidades básicas de R y permiten a los usuarios realizar tareas más avanzadas de manera eficiente.</p>
 <p>Existen una gran variedad de librerías disponibles en R, cada una diseñada para abordar un campo o área de aplicación particular. A continuación, mencionaré algunos de los campos más comunes en los que se utilizan las librerías de R:</p>
 <dl>
@@ -410,17 +423,16 @@ R es conocido por su capacidad para generar gráficos y visualizaciones de datos
 </dd>
 </dl>
 <p>Estos son solo algunos ejemplos de los campos en los que se utilizan las librerías de R. Es importante destacar que la comunidad de R es muy activa y constantemente se desarrollan nuevas librerías para abordar diferentes necesidades en diversos campos de aplicación. El uso de estas librerías no solo ahorra tiempo y esfuerzo, sino que también permite a los programadores y analistas aprovechar las mejores prácticas y métodos establecidos en sus respectivos campos.</p>
-</section>
-<section id="ejemplo-de-instalación-de-librerías-desde-r" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="ejemplo-de-instalación-de-librerías-desde-r"><span class="header-section-number">6.3.2</span> Ejemplo de Instalación de Librerías desde R</h3>
+<section id="ejemplo-de-instalación-de-librerías-desde-r" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="ejemplo-de-instalación-de-librerías-desde-r"><span class="header-section-number">6.4.1</span> Ejemplo de Instalación de Librerías desde R</h3>
 <p>Podemos instalar paquetes usando la función <code>install.packages()</code>, dando como argumento el nombre del paquete que deseamos instalar, entre comillas.</p>
 <p>Para instalar librerías se puede hacer directamente desde la consola de RStudio, por ejemplo:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"dplyr"</span>) <span class="co"># Se puede instalar más de una librería a la vez</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="ejemplo-de-instalación-de-librerías-desde-rstudio" class="level3" data-number="6.3.3">
-<h3 data-number="6.3.3" class="anchored" data-anchor-id="ejemplo-de-instalación-de-librerías-desde-rstudio"><span class="header-section-number">6.3.3</span> Ejemplo de Instalación de Librerías desde Rstudio</h3>
+<section id="ejemplo-de-instalación-de-librerías-desde-rstudio" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="ejemplo-de-instalación-de-librerías-desde-rstudio"><span class="header-section-number">6.4.2</span> Ejemplo de Instalación de Librerías desde Rstudio</h3>
 <p>También se pude instalar librerías del Panel “Packages”</p>
 <center>
 <img src="images/install_pack2.png" class="img-fluid" style="width:90.0%">
@@ -431,8 +443,8 @@ R es conocido por su capacidad para generar gráficos y visualizaciones de datos
 </center>
 </section>
 </section>
-<section id="directorios-de-trabajos" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="directorios-de-trabajos"><span class="header-section-number">6.4</span> Directorios de Trabajos</h2>
+<section id="directorios-de-trabajos" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="directorios-de-trabajos"><span class="header-section-number">6.5</span> Directorios de Trabajos</h2>
 <p>Un directorio de trabajo, también conocido como carpeta de trabajo, es una ubicación específica en un sistema de archivos donde se almacenan y organizan los archivos relacionados con un proyecto o una tarea determinada. Estos directorios son esenciales para mantener un entorno de desarrollo ordenado y estructurado. Aquí tienes algunas razones por las que son importantes:</p>
 <dl>
 <dt>Organización:</dt>
@@ -448,8 +460,8 @@ Al utilizar directorios de trabajo adecuados, es más sencillo realizar tareas d
 Los directorios de trabajo facilitan la portabilidad de un proyecto. Si necesitas mover o copiar tu proyecto a otro lugar, simplemente tendrás que llevar el directorio principal y todos los subdirectorios y archivos asociados estarán incluidos. Esto garantiza que no falten archivos esenciales y que el proyecto se pueda ejecutar sin problemas en un nuevo entorno.
 </dd>
 </dl>
-<section id="directorios-de-trabajo-en-rstudio" class="level3" data-number="6.4.1">
-<h3 data-number="6.4.1" class="anchored" data-anchor-id="directorios-de-trabajo-en-rstudio"><span class="header-section-number">6.4.1</span> Directorios de Trabajo en RStudio</h3>
+<section id="directorios-de-trabajo-en-rstudio" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="directorios-de-trabajo-en-rstudio"><span class="header-section-number">6.5.1</span> Directorios de Trabajo en RStudio</h3>
 <p>Definir directorio de Trabajo con RStudio se puede hacer de varias formas:</p>
 <ol type="1">
 <li>Desde Rstudio.</li>
@@ -475,8 +487,8 @@ Los directorios de trabajo facilitan la portabilidad de un proyecto. Si necesita
 </div>
 </section>
 </section>
-<section id="referencias" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="referencias"><span class="header-section-number">6.5</span> Referencias:</h2>
+<section id="referencias" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="referencias"><span class="header-section-number">6.6</span> Referencias:</h2>
 <ul>
 <li><a href="https://es.r4ds.hadley.nz">R para Ciencia de Datos</a></li>
 <li><a href="https://bookdown.org/gboccardo/manual-ED-UCH/">RStudio para Estadística Descriptiva en Ciencias Sociales</a></li>
