@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Gestión de Datos Espaciales - 8&nbsp; Funciones en R</title>
+<title>Gestión de Datos Espaciales - 10&nbsp; Funciones en R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./dataframes.html" rel="next">
+<link href="./datos_espaciales.html" rel="next">
 <link href="./variables.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -161,7 +161,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./funciones.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Funciones en R</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_r.html">R Project</a></li><li class="breadcrumb-item"><a href="./funciones.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Funciones en R</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -213,45 +213,62 @@ window.Quarto = {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./construccion_inds.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Construcción de Indicadores Territoriales</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introducción a R Project</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./variables.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variables en R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./funciones.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Funciones en R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./dataframes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dataframes en R</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./datos_espaciales.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Datos Espaciales</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Indicadores Territoriales</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./indicadores.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Indicadores Territoriales</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Inds. Socioeconómicos</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./proyecto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Proyecto Final</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">R Project</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Introducción a R Project</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./variables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Variables en R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./funciones.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Funciones en R</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./datos_espaciales.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos Espaciales</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./dataframes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Dataframes y Delitos en R</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
@@ -260,13 +277,13 @@ window.Quarto = {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./recursos.html" class="sidebar-item-text sidebar-link">
@@ -297,33 +314,33 @@ window.Quarto = {
     <h2 id="toc-title">Contenidos</h2>
    
   <ul>
-  <li><a href="#operaciones-básicas-en-r" id="toc-operaciones-básicas-en-r" class="nav-link active" data-scroll-target="#operaciones-básicas-en-r"><span class="header-section-number">8.1</span> Operaciones Básicas en R</a>
+  <li><a href="#operaciones-básicas-en-r" id="toc-operaciones-básicas-en-r" class="nav-link active" data-scroll-target="#operaciones-básicas-en-r"><span class="header-section-number">10.1</span> Operaciones Básicas en R</a>
   <ul class="collapse">
-  <li><a href="#operaciones-matemáticas" id="toc-operaciones-matemáticas" class="nav-link" data-scroll-target="#operaciones-matemáticas"><span class="header-section-number">8.1.1</span> Operaciones Matemáticas</a></li>
-  <li><a href="#funciones-útiles-de-propósito-general" id="toc-funciones-útiles-de-propósito-general" class="nav-link" data-scroll-target="#funciones-útiles-de-propósito-general"><span class="header-section-number">8.1.2</span> Funciones Útiles de propósito general</a></li>
+  <li><a href="#operaciones-matemáticas" id="toc-operaciones-matemáticas" class="nav-link" data-scroll-target="#operaciones-matemáticas"><span class="header-section-number">10.1.1</span> Operaciones Matemáticas</a></li>
+  <li><a href="#funciones-útiles-de-propósito-general" id="toc-funciones-útiles-de-propósito-general" class="nav-link" data-scroll-target="#funciones-útiles-de-propósito-general"><span class="header-section-number">10.1.2</span> Funciones Útiles de propósito general</a></li>
   </ul></li>
-  <li><a href="#operaciones-lógicas" id="toc-operaciones-lógicas" class="nav-link" data-scroll-target="#operaciones-lógicas"><span class="header-section-number">8.2</span> Operaciones Lógicas</a>
+  <li><a href="#operaciones-lógicas" id="toc-operaciones-lógicas" class="nav-link" data-scroll-target="#operaciones-lógicas"><span class="header-section-number">10.2</span> Operaciones Lógicas</a>
   <ul class="collapse">
-  <li><a href="#operador-de-igualdad" id="toc-operador-de-igualdad" class="nav-link" data-scroll-target="#operador-de-igualdad"><span class="header-section-number">8.2.1</span> Operador de igualdad: (==)</a></li>
-  <li><a href="#operador-de-desigualdad" id="toc-operador-de-desigualdad" class="nav-link" data-scroll-target="#operador-de-desigualdad"><span class="header-section-number">8.2.2</span> Operador de desigualdad: (!=)</a></li>
-  <li><a href="#operador-de-mayor-que" id="toc-operador-de-mayor-que" class="nav-link" data-scroll-target="#operador-de-mayor-que"><span class="header-section-number">8.2.3</span> Operador de mayor que: (&gt;)</a></li>
-  <li><a href="#operador-de-menor-que" id="toc-operador-de-menor-que" class="nav-link" data-scroll-target="#operador-de-menor-que"><span class="header-section-number">8.2.4</span> Operador de menor que: (&lt;)</a></li>
-  <li><a href="#operador-de-mayor-o-igual-que" id="toc-operador-de-mayor-o-igual-que" class="nav-link" data-scroll-target="#operador-de-mayor-o-igual-que"><span class="header-section-number">8.2.5</span> Operador de mayor o igual que: (&gt;=)</a></li>
-  <li><a href="#operador-de-menor-o-igual-que" id="toc-operador-de-menor-o-igual-que" class="nav-link" data-scroll-target="#operador-de-menor-o-igual-que"><span class="header-section-number">8.2.6</span> Operador de menor o igual que: (&lt;=)</a></li>
-  <li><a href="#operador-lógico-and" id="toc-operador-lógico-and" class="nav-link" data-scroll-target="#operador-lógico-and"><span class="header-section-number">8.2.7</span> Operador lógico AND: (&amp;)</a></li>
-  <li><a href="#operador-lógico-or" id="toc-operador-lógico-or" class="nav-link" data-scroll-target="#operador-lógico-or"><span class="header-section-number">8.2.8</span> Operador lógico OR: (|)</a></li>
+  <li><a href="#operador-de-igualdad" id="toc-operador-de-igualdad" class="nav-link" data-scroll-target="#operador-de-igualdad"><span class="header-section-number">10.2.1</span> Operador de igualdad: (==)</a></li>
+  <li><a href="#operador-de-desigualdad" id="toc-operador-de-desigualdad" class="nav-link" data-scroll-target="#operador-de-desigualdad"><span class="header-section-number">10.2.2</span> Operador de desigualdad: (!=)</a></li>
+  <li><a href="#operador-de-mayor-que" id="toc-operador-de-mayor-que" class="nav-link" data-scroll-target="#operador-de-mayor-que"><span class="header-section-number">10.2.3</span> Operador de mayor que: (&gt;)</a></li>
+  <li><a href="#operador-de-menor-que" id="toc-operador-de-menor-que" class="nav-link" data-scroll-target="#operador-de-menor-que"><span class="header-section-number">10.2.4</span> Operador de menor que: (&lt;)</a></li>
+  <li><a href="#operador-de-mayor-o-igual-que" id="toc-operador-de-mayor-o-igual-que" class="nav-link" data-scroll-target="#operador-de-mayor-o-igual-que"><span class="header-section-number">10.2.5</span> Operador de mayor o igual que: (&gt;=)</a></li>
+  <li><a href="#operador-de-menor-o-igual-que" id="toc-operador-de-menor-o-igual-que" class="nav-link" data-scroll-target="#operador-de-menor-o-igual-que"><span class="header-section-number">10.2.6</span> Operador de menor o igual que: (&lt;=)</a></li>
+  <li><a href="#operador-lógico-and" id="toc-operador-lógico-and" class="nav-link" data-scroll-target="#operador-lógico-and"><span class="header-section-number">10.2.7</span> Operador lógico AND: (&amp;)</a></li>
+  <li><a href="#operador-lógico-or" id="toc-operador-lógico-or" class="nav-link" data-scroll-target="#operador-lógico-or"><span class="header-section-number">10.2.8</span> Operador lógico OR: (|)</a></li>
   </ul></li>
-  <li><a href="#crear-funciones-propias" id="toc-crear-funciones-propias" class="nav-link" data-scroll-target="#crear-funciones-propias"><span class="header-section-number">8.3</span> Crear Funciones Propias</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">8.4</span> Referencias:</a></li>
+  <li><a href="#crear-funciones-propias" id="toc-crear-funciones-propias" class="nav-link" data-scroll-target="#crear-funciones-propias"><span class="header-section-number">10.3</span> Crear Funciones Propias</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">10.4</span> Referencias:</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./intro_r.html">R Project</a></li><li class="breadcrumb-item"><a href="./funciones.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Funciones en R</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Funciones en R</span></h1>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Funciones en R</span></h1>
 </div>
 
 
@@ -345,10 +362,10 @@ window.Quarto = {
 <p><img src="images/S3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<section id="operaciones-básicas-en-r" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="operaciones-básicas-en-r"><span class="header-section-number">8.1</span> Operaciones Básicas en R</h2>
-<section id="operaciones-matemáticas" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="operaciones-matemáticas"><span class="header-section-number">8.1.1</span> Operaciones Matemáticas</h3>
+<section id="operaciones-básicas-en-r" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="operaciones-básicas-en-r"><span class="header-section-number">10.1</span> Operaciones Básicas en R</h2>
+<section id="operaciones-matemáticas" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="operaciones-matemáticas"><span class="header-section-number">10.1.1</span> Operaciones Matemáticas</h3>
 <p>En R, es posible realizar operaciones matemáticas básicas utilizando los operadores aritméticos estándar. Estos operadores incluyen:</p>
 <ul>
 <li>Suma (+): se utiliza para sumar dos valores.</li>
@@ -428,8 +445,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="funciones-útiles-de-propósito-general" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="funciones-útiles-de-propósito-general"><span class="header-section-number">8.1.2</span> Funciones Útiles de propósito general</h3>
+<section id="funciones-útiles-de-propósito-general" class="level3" data-number="10.1.2">
+<h3 data-number="10.1.2" class="anchored" data-anchor-id="funciones-útiles-de-propósito-general"><span class="header-section-number">10.1.2</span> Funciones Útiles de propósito general</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rep</span>(<span class="dv">1</span>, <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -476,8 +493,8 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="operaciones-lógicas" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="operaciones-lógicas"><span class="header-section-number">8.2</span> Operaciones Lógicas</h2>
+<section id="operaciones-lógicas" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="operaciones-lógicas"><span class="header-section-number">10.2</span> Operaciones Lógicas</h2>
 <p>En R, los operadores lógicos se utilizan para realizar comparaciones lógicas entre valores o expresiones. Estos operadores devuelven valores booleanos (TRUE o FALSE) según se cumpla o no la condición.</p>
 <p>A continuación se presentan los operadores lógicos en R:</p>
 <div class="cell">
@@ -544,8 +561,8 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<section id="operador-de-igualdad" class="level3" data-number="8.2.1">
-<h3 data-number="8.2.1" class="anchored" data-anchor-id="operador-de-igualdad"><span class="header-section-number">8.2.1</span> Operador de igualdad: (==)</h3>
+<section id="operador-de-igualdad" class="level3" data-number="10.2.1">
+<h3 data-number="10.2.1" class="anchored" data-anchor-id="operador-de-igualdad"><span class="header-section-number">10.2.1</span> Operador de igualdad: (==)</h3>
 <p>Este operador se utiliza para comparar si dos valores son iguales. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -556,8 +573,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-de-desigualdad" class="level3" data-number="8.2.2">
-<h3 data-number="8.2.2" class="anchored" data-anchor-id="operador-de-desigualdad"><span class="header-section-number">8.2.2</span> Operador de desigualdad: (!=)</h3>
+<section id="operador-de-desigualdad" class="level3" data-number="10.2.2">
+<h3 data-number="10.2.2" class="anchored" data-anchor-id="operador-de-desigualdad"><span class="header-section-number">10.2.2</span> Operador de desigualdad: (!=)</h3>
 <p>Este operador se utiliza para comparar si dos valores son diferentes. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -568,8 +585,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-de-mayor-que" class="level3" data-number="8.2.3">
-<h3 data-number="8.2.3" class="anchored" data-anchor-id="operador-de-mayor-que"><span class="header-section-number">8.2.3</span> Operador de mayor que: (&gt;)</h3>
+<section id="operador-de-mayor-que" class="level3" data-number="10.2.3">
+<h3 data-number="10.2.3" class="anchored" data-anchor-id="operador-de-mayor-que"><span class="header-section-number">10.2.3</span> Operador de mayor que: (&gt;)</h3>
 <p>Este operador se utiliza para comparar si un valor es mayor que otro. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -580,8 +597,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-de-menor-que" class="level3" data-number="8.2.4">
-<h3 data-number="8.2.4" class="anchored" data-anchor-id="operador-de-menor-que"><span class="header-section-number">8.2.4</span> Operador de menor que: (&lt;)</h3>
+<section id="operador-de-menor-que" class="level3" data-number="10.2.4">
+<h3 data-number="10.2.4" class="anchored" data-anchor-id="operador-de-menor-que"><span class="header-section-number">10.2.4</span> Operador de menor que: (&lt;)</h3>
 <p>Este operador se utiliza para comparar si un valor es menor que otro. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -592,8 +609,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-de-mayor-o-igual-que" class="level3" data-number="8.2.5">
-<h3 data-number="8.2.5" class="anchored" data-anchor-id="operador-de-mayor-o-igual-que"><span class="header-section-number">8.2.5</span> Operador de mayor o igual que: (&gt;=)</h3>
+<section id="operador-de-mayor-o-igual-que" class="level3" data-number="10.2.5">
+<h3 data-number="10.2.5" class="anchored" data-anchor-id="operador-de-mayor-o-igual-que"><span class="header-section-number">10.2.5</span> Operador de mayor o igual que: (&gt;=)</h3>
 <p>Este operador se utiliza para comparar si un valor es mayor o igual que otro. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -604,8 +621,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-de-menor-o-igual-que" class="level3" data-number="8.2.6">
-<h3 data-number="8.2.6" class="anchored" data-anchor-id="operador-de-menor-o-igual-que"><span class="header-section-number">8.2.6</span> Operador de menor o igual que: (&lt;=)</h3>
+<section id="operador-de-menor-o-igual-que" class="level3" data-number="10.2.6">
+<h3 data-number="10.2.6" class="anchored" data-anchor-id="operador-de-menor-o-igual-que"><span class="header-section-number">10.2.6</span> Operador de menor o igual que: (&lt;=)</h3>
 <p>Este operador se utiliza para comparar si un valor es menor o igual que otro. Retorna TRUE si la condición se cumple y FALSE en caso contrario.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -616,8 +633,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-lógico-and" class="level3" data-number="8.2.7">
-<h3 data-number="8.2.7" class="anchored" data-anchor-id="operador-lógico-and"><span class="header-section-number">8.2.7</span> Operador lógico AND: (&amp;)</h3>
+<section id="operador-lógico-and" class="level3" data-number="10.2.7">
+<h3 data-number="10.2.7" class="anchored" data-anchor-id="operador-lógico-and"><span class="header-section-number">10.2.7</span> Operador lógico AND: (&amp;)</h3>
 <p>Este operador se utiliza para evaluar dos o más condiciones y retornar TRUE si todas se cumplen, de lo contrario retorna FALSE.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -629,8 +646,8 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="operador-lógico-or" class="level3" data-number="8.2.8">
-<h3 data-number="8.2.8" class="anchored" data-anchor-id="operador-lógico-or"><span class="header-section-number">8.2.8</span> Operador lógico OR: (|)</h3>
+<section id="operador-lógico-or" class="level3" data-number="10.2.8">
+<h3 data-number="10.2.8" class="anchored" data-anchor-id="operador-lógico-or"><span class="header-section-number">10.2.8</span> Operador lógico OR: (|)</h3>
 <p>Este operador se utiliza para evaluar dos o más condiciones y retornar TRUE si al menos una se cumple, de lo contrario retorna FALSE.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">2</span></span>
@@ -653,8 +670,8 @@ window.Quarto = {
 <p>Es importante tener en cuenta que los operadores lógicos se pueden utilizar en combinación para crear expresiones lógicas más complejas. Además, los operadores lógicos también se pueden utilizar en las estructuras de control condicionales, como if/else y switch, para tomar decisiones basadas en condiciones lógicas.</p>
 </section>
 </section>
-<section id="crear-funciones-propias" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="crear-funciones-propias"><span class="header-section-number">8.3</span> Crear Funciones Propias</h2>
+<section id="crear-funciones-propias" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="crear-funciones-propias"><span class="header-section-number">10.3</span> Crear Funciones Propias</h2>
 <p>En R, es posible crear funciones propias para realizar tareas específicas y reutilizarlas en diferentes partes de un programa. Para crear una función en R, se utiliza la siguiente estructura:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>nombre_de_la_funcion <span class="ot">&lt;-</span> <span class="cf">function</span>(argumentos) {</span>
@@ -727,8 +744,8 @@ h=<em>?</em>, a = 10, b = 6<br>
 h=<em>?</em>, a = 5, b = 4<br>
 h=<em>?</em>, a = 3, b = 4</p>
 </section>
-<section id="referencias" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">8.4</span> Referencias:</h2>
+<section id="referencias" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">10.4</span> Referencias:</h2>
 <ul>
 <li><p><a href="https://bookdown.org/jboscomendoza/r-principiantes4/estructuras-de-control.html">https://bookdown.org/jboscomendoza/r-principiantes4/estructuras-de-control.html</a></p></li>
 <li><p><a href="https://rstudio-pubs-static.s3.amazonaws.com/623888_497a5388a98545c48e9b5b6bec4056f6.html">Loops y funciones en R</a></p></li>
@@ -1150,12 +1167,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./variables.html" class="pagination-link" aria-label="Variables en R">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Variables en R</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Variables en R</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./dataframes.html" class="pagination-link" aria-label="Dataframes en R">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Dataframes en R</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./datos_espaciales.html" class="pagination-link" aria-label="Datos Espaciales">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Datos Espaciales</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
